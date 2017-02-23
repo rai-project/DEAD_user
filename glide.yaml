@@ -1,0 +1,11 @@
+package: github.com/rai-project/user
+import:
+- package: github.com/BurntSushi/toml
+  version: ~0.2.0
+- package: github.com/Unknwon/com
+  version: ~1.0.0
+- package: github.com/mitchellh/go-homedir
+- package: github.com/pkg/errors
+  version: ~0.8.0
+- package: github.com/rai-project/auth
+- package: github.com/rai-project/config
