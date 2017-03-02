@@ -65,6 +65,6 @@ func init() {
 			return
 		}
 
-		DefaultProfilePath = "not-found"
+		DefaultProfilePath = appName + ".profile"
 	})
 }
