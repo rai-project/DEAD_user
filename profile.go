@@ -23,6 +23,9 @@ type Profile struct {
 }
 
 func NewProfile(path string) (*Profile, error) {
+	if path == "" {
+		path = DefaultProfilePath
+	}
 	if !com.IsFile(path) {
 		return nil, errors.Errorf("unable to locate %v. not such file or directory", path)
 	}
