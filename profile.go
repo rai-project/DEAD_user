@@ -17,9 +17,9 @@ var (
 )
 
 type Profile struct {
-	Username  string `toml:"username"`
-	AccessKey string `toml:"access_key"`
-	SecretKey string `toml:"secret_key"`
+	Username  string `json:"username" toml:"username"`
+	AccessKey string `json:"access_key" toml:"access_key"`
+	SecretKey string `json:"secret_key" toml:"secret_key"`
 }
 
 func NewProfile(path string) (*Profile, error) {
